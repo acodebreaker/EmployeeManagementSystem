@@ -36,7 +36,16 @@ public class EmployeeServiceImpl implements IEmployeeService
 		
 		
 	}
-	public void  ModifyEmployee(HashMap<String, String >hm){}
+	public void  ModifyEmployee(String employeeid)
+	{
+        EmployeeDaoImplForList temp= new EmployeeDaoImplForList();
+        temp.modify_employee();
+
+
+
+
+
+	}
 	public void RemoveEmployee(HashMap<String, String >hm){}
 	public void SearchEmployee(HashMap<String, String >hm){}
 	public void getAllEmployee(){
